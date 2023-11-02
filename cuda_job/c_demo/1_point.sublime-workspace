@@ -1,0 +1,366 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mat",
+				"matMulKernel"
+			],
+			[
+				"sa",
+				"sampleProp"
+			],
+			[
+				"Samp",
+				"SampleSize"
+			],
+			[
+				"Sam",
+				"Samplesizes"
+			],
+			[
+				"max",
+				"max_depth"
+			],
+			[
+				"wo",
+				"woe_iv\tclass"
+			],
+			[
+				"class",
+				"classmethod\tclass"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Arithmetic"
+			],
+			[
+				"wrap",
+				"Wrap at Ruler"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"cool",
+				"CoolFormat: Quick Format"
+			],
+			[
+				"C",
+				"Clang Format: Format Selection"
+			],
+			[
+				"coolformat",
+				"CoolFormat: Quick Format"
+			],
+			[
+				"coolf",
+				"CoolFormat: Quick Format"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"previes",
+				"Markdown Preview: Save to HTML"
+			],
+			[
+				"revi",
+				"MarkdownLivePreview: Open Preview"
+			],
+			[
+				"markdown",
+				"MarkdownLivePreview: Open Preview"
+			],
+			[
+				"markdownpr",
+				"MarkdownLivePreview: Open Preview"
+			],
+			[
+				"removepackage",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Package C",
+				"Preferences: Browse Packages"
+			],
+			[
+				"Package Contr",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"package",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"subli",
+				"Sublimerge: Compare to View..."
+			],
+			[
+				"package con",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"package control: ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 748.0,
+		"history":
+		[
+			"import urllib2,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/david/Documents/cuda_job/c_demo/10_structure_6.c",
+		"/Users/david/Documents/cuda_job/5_matrix_multiplication.cu",
+		"/Users/david/Documents/cuda_job/c_demo/1_point.c",
+		"/Users/david/Documents/cuda_job/c_demo/1_point_2.c",
+		"/Users/david/Documents/cuda_job/c_demo/6_pthread.c",
+		"/Users/david/Documents/cuda_job/c_demo/6_pthread_2.c",
+		"/Users/david/Documents/cuda_job/c_demo/7_output.c",
+		"/Users/david/Documents/cuda_job/mat_load.c",
+		"/Users/david/Documents/cuda_job/6_mat_mul_demo.cu",
+		"/Users/david/Documents/cuda_job/c_demo/3_add.c",
+		"/Users/david/Documents/cuda_job/c_demo/2_void.c",
+		"/Users/david/Documents/cuda_job/c_demo/4_memory.c",
+		"/Users/david/Documents/cuda_job/c_demo/9_scanf.c",
+		"/Users/david/Documents/cuda_job/c_demo/10_structure.c",
+		"/Users/david/Documents/cuda_job/c_demo/10_structure_2.c",
+		"/Users/david/Documents/cuda_job/c_demo/10_structure_3.c",
+		"/Users/david/Documents/cuda_job/c_demo/10_structure_4.c",
+		"/Users/david/Documents/cuda_job/1_hello.cu",
+		"/Users/david/Documents/cuda_job/c_demo/mat_memory.cu",
+		"/Users/david/Documents/cuda_job/c_demo/8_getchar.c",
+		"/Users/david/Documents/cuda_job/c_demo/thread_demo.c",
+		"/Users/david/Documents/cuda_job/0_mat_mul.cu",
+		"/Users/david/Documents/cuda_job/mat_mul.cu",
+		"/Users/david/Documents/cuda_job/mat_load.cu",
+		"/Users/david/Documents/cuda_job/c_demo/demo_mat_mu.c",
+		"/Users/david/Documents/cuda_job/3_add_easy.cu",
+		"/Users/david/Documents/cuda_job/4_array_add.cu",
+		"/Users/david/Documents/cuda_job/add.c",
+		"/Users/david/Documents/cuda_job/2_add.cu",
+		"/Users/david/Library/Application Support/Sublime Text 3/Packages/CoolFormat/CoolFormatLib/CoolFormatConfig.cfconfig",
+		"/Users/david/Documents/demo_mat_mu.c",
+		"/Users/david/Documents/demo_point.c",
+		"/Users/david/Documents/mat_mul.cu",
+		"/Users/david/Documents/mat_output.cu.c",
+		"/Users/david/Documents/mat_load.c",
+		"/Users/david/Documents/file.txt",
+		"/Users/david/Documents/add_thread.cu",
+		"/Users/david/Documents/array_add.cu",
+		"/Users/david/Documents/a.c",
+		"/Users/david/Documents/findMax.cu",
+		"/Users/david/Documents/add_cuda.cu",
+		"/Users/david/sages/Aca/Thesis/reversal_large_stock_new.md",
+		"/Users/david/sages/Aca/reversal_large_stock_new.md",
+		"/Users/david/sages/Aca/reversal_large_stock_new.pdf",
+		"/Users/david/sages/Job/KPs/3 公众号/金融计算与建模_Programs_new/chapter17.sas",
+		"/Users/david/OneDrive - Dalhousie University/PythonGroup/Lec_1_Base python coding.txt",
+		"/Users/david/OneDrive - Dalhousie University/PythonGroup/Python_books_eliete.txt",
+		"/Users/david/OneDrive - Dalhousie University/PythonGroup/Install python environment.readme.txt",
+		"/Users/david/Downloads/lastpass_export.csv",
+		"/Users/david/Downloads/a.py",
+		"/Users/david/Downloads/A sample Markdown document.md"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": true,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": false,
+		"use_buffer2": false,
+		"use_gitignore": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 168.0
+	},
+	"output.find_results":
+	{
+		"height": 108.0
+	},
+	"output.markdown":
+	{
+		"height": 108.0
+	},
+	"pinned_build_system": "",
+	"project": "1_point.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 190.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 223.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

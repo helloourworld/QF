@@ -8,49 +8,15 @@ crontab -e
 
 crontab -l
 """
-import sqlite3
-import os
-import datetime
+import pandas as pd
 
-# Path to Safari bookmarks file
-safari_bookmarks_path = os.path.expanduser("~/Library/Safari/Bookmarks.db")
+# Replace with the URL of the FAA data file (e.g., CY 2022 Passenger Boarding data)
+data_url = "https://www.faa.gov/sites/faa.gov/files/2022-09/cy21-all-enplanements.xlsx"
 
-# Path to Chrome bookmarks file
-chrome_bookmarks_path = os.path.expanduser("~/Library/Application Support/Google/Chrome/Default/Bookmarks")
-
-# Path to log file
-log_file_path = os.path.expanduser("~/Documents/sync_bookmarks.log")
-
-# Connect to Safari bookmarks database
-safari_conn = sqlite3.connect(safari_bookmarks_path)
-safari_cursor = safari_conn.cursor()
-
-# Get all bookmarks from Safari
-safari_cursor.execute("SELECT title, url FROM bookmarks")
-safari_bookmarks = safari_cursor.fetchall()
-
-# Close Safari bookmarks database connection
-safari_conn.close()
-
-# Connect to Chrome bookmarks file
-chrome_conn = sqlite3.connect(chrome_bookmarks_path)
-chrome_cursor = chrome_conn.cursor()
-
-# Delete all existing bookmarks in Chrome
-chrome_cursor.execute("DELETE FROM bookmarks")
-
-# Insert all Safari bookmarks into Chrome
-for bookmark in safari_bookmarks:
-    chrome_cursor.execute("INSERT INTO bookmarks (id, type, url, title, date_added, date_modified, meta_info, parent_id, position) VALUES (NULL, 1, ?, ?, strftime('%s', 'now'), strftime('%s', 'now'), NULL, 1, 0)", bookmark)
-
-# Commit changes to Chrome bookmarks file
-chrome_conn.commit()
-
-# Close Chrome bookmarks file connection
-chrome_conn.close()
-
-# Write output to log file
-with open(log_file_path, "a") as log_file:
-    log_file.write(f"{datetime.datetime.now()}: Safari bookmarks have been synced with Google Chrome!\n")
-
-print("Done!")
+# Read the Excel file into a pandas DataFrame
+try:
+    df = pd.read_excel(data_url)
+    print("Data loaded successfully!")
+    print(df.head())  # Display the first few rows of data
+except Exception as e:
+    print(f"Error loading data: {e}")

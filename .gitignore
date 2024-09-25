@@ -1,4 +1,5 @@
 .DS_Store
 P_QF/.DS_Store
 P_QF/.idea/*
+P_QF/stock_data/*
 *.pyc

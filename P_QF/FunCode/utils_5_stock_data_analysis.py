@@ -72,7 +72,7 @@ ticker = st.sidebar.selectbox(
 
 start = st.sidebar.date_input("Start date:", pd.Timestamp("2020-01-01"))
 end = st.sidebar.date_input("End date:", date.today())
-data = yf.download(ticker, start, end)
+data = yf.download(ticker, start)
 
 # print(data.head())
 # If yfinance returned a MultiIndex (e.g., when downloading multiple tickers), flatten to the OHLCV level

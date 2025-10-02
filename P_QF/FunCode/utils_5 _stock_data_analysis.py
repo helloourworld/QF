@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+<<<<<<< HEAD
 import importlib.util
 
 def ensure_installed(pkg_name):
@@ -11,12 +12,17 @@ def ensure_installed(pkg_name):
 
 ensure_installed("yfinance")
 
+=======
+>>>>>>> e052d1d2b4a0e67e0b179a2fcd87678e348e3690
 import yfinance as yf
 import requests
 import talib
 from datetime import date
+<<<<<<< HEAD
 import subprocess
 import sys
+=======
+>>>>>>> e052d1d2b4a0e67e0b179a2fcd87678e348e3690
 
 def get_sp500_components():
     url = 'https://en.wikipedia.org/wiki/List_of_S%26P_500_companies'

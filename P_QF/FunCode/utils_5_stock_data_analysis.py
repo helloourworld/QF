@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import importlib.util
 import subprocess
-
+import sys
 def ensure_installed(pkg_name):
     if importlib.util.find_spec(pkg_name) is None:
         try:
@@ -17,7 +17,7 @@ import requests
 import talib
 from datetime import date
 
-import sys
+
 
 def get_sp500_components():
     url = 'https://en.wikipedia.org/wiki/List_of_S%26P_500_companies'

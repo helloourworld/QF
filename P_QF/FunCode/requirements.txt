@@ -4,3 +4,4 @@ pandas
 ta-lib
 lxml
 plotly
+matplotlib

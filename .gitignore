@@ -5,3 +5,4 @@ P_QF/.vscode/*
 P_QF/Portfolio/stock_data/*
 *.pyc
 .devcontainer
+.vscode

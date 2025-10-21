@@ -26,11 +26,10 @@ def compute_emas_and_signals(df: pd.DataFrame, s:int, m:int, l:int):
     # EMA50 > EMA200 or Close > EMA200
     # and Close > EMA50 for bullish entry
     out["bullish"] = ((out[f"ema_{m}"] > out[f"ema_{l}"]) | (out["Close"] > out[f"ema_{l}"])) & (out["Close"] > out[f"ema_{m}"]) # Bullish condition
-    out["entry_signal"] = out["bullish"] & (~out["bullish"].shift(1).fillna(False))
-    
+    out["entry_signal"] = out["bullish"] & (~out["bullish"].shift(1, fill_value=False))
     # Close < EMA20 for bearish exit
     out["bearish"] = out["Close"] < out[f"ema_{s}"] # Bearish condition
-    out["exit_signal"] = out["bearish"] & (~out["bearish"].shift(1).fillna(False))
+    out["exit_signal"] = out["bearish"] & (~out["bearish"].shift(1, fill_value=False))
 
     trades = []
     in_trade = False

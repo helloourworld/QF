@@ -1,0 +1,263 @@
+
+from moviepy import VideoFileClip
+import os
+import warnings
+warnings.filterwarnings('ignore')
+def convert_mov_to_mp4(input_path, output_path):
+    # Load the .mov file
+    video_clip = VideoFileClip(input_path)
+    
+    # Write the video file to .mp4 format with audio, using a faster preset
+    video_clip.write_videofile(
+        output_path,
+        codec='libx264',
+        audio_codec='aac',
+        ffmpeg_params=['-preset', 'ultrafast','-threads', '0']
+    )
+
+# Example usage
+filedir = "C:\\Users\\lyu\\Desktop\\mp4 Hatfiled farms"
+for f in os.listdir(filedir):
+    if f.endswith('MOV'):
+        if f.endswith('10.MOV'):
+            continue
+        print(f)
+        print(f.replace("MOV", "mp4"))
+        # 
+        input_path = filedir +'/' + f
+        output_path = filedir +'/' + f.replace("MOV", "mp4")
+        convert_mov_to_mp4(input_path, output_path)
+        break
+# from wand.image import Image
+# import os
+
+# SourceFolder="C:\\Users\\lyu\\Desktop\\Hatfiled Video\\"
+# TargetFolder=SourceFolder
+
+# for file in os.listdir(SourceFolder):
+#     if f.endswith('HEIC'):
+#         print(f)
+#         print(f.replace("HEIC", "JPG"))
+#     SourceFile=SourceFolder + "/" + file
+#     TargetFile=TargetFolder + "/" + file.replace(".HEIC",".JPG")
+
+#     img=Image(filename=SourceFile)
+#     img.format='jpg'
+#     img.save(filename=TargetFile)
+#     img.close()
+
+"""
+index to index to
+
+manage a fund invested in uk stocks that index to ft100
+
+tfse 100
+
+ftse 100
+index to ftse 100 index index to
+does not have an expectation on the direction of UK an expectation on the direction next quarter.
+
+however, she is keen to minimize tarcig error risk.does not have direction
+direction 
+minimize tracking error cash equitization cash equitization strategy
+
+cash equitization equitization equitization
+
+eequizitation 
+equitization 
+equitization
+equitization
+
+ftse 100 future settleing 3 months ftse cruuently price of 7900
+
+contract's value 10 per index point.purchasing equity index futures. index futures. 
+
+number is bt / bf * (S  / f) = 
+
+print(1 / 1 * 20000000/79000)
+
+3 months later, the ftse 100 index has increased by 5%
+
+cash settle ment of the contract at is 8282.5
+
+print(8282.5 - 7900)
+so there is a gain of 382.5 index points index points 
+so there is a gina of 382.t index points, each point being worth 10 dollars.
+
+print(253 * 10 * 382.5 )
+
+l = 241.5 + 20 + .967725 + .0315 
+
+currency swaps
+currency swaps forwards futurescurrency swaps fowwards futures
+alter currency riskk exposures
+currency risk exposures
+currency risk exposures
+
+A common use of crrrency swaps by investors is in transactions meant to earn extra yield by investing in a foreign bond market and wswapping the procees in to domestic currency. currency swap. a common use of currency swaps by investor is intransactions meant to earn extra yield by investing in a freign bond market and swappoing th proceeds into the domestic currency.
+
+If the cad were to depreciate versus the us dollar before the pmt date, the us vc firm will receive fewer us dollars in exchange for cad 50 million.
+
+to eliminate the foreign exchange risk associated with receiving this capital commitment, fix the price of us dollars nnow via a fowward contract in which 
+
+could temporarily remove part of the maket risk by selling sp futuress
+
+index futures
+
+quotes = 2700
+multiplier = 250
+
+future_price = quotes * multiplier
+future_price
+
+average mkt riskk meaning beta = 1
+
+to hedge 30% of the 100 million portfolio, the PM would want to selling
+
+44 future contract
+
+30*10**6/future_price
+
+suppose the institutional investor sold 44 futures,
+at expiration, the sp500 rises by .5%
+
+cash settlement is 
+
+44 * future_price *.5/100
+
+future_price *1.005
+quotes *.005
+
+beta_target
+beta_future
+
+cashholding beta is 0
+
+beta_target - 0 / beta_future
+
+140 * 10 **6 / (23000*1000)
+
+use futures vix that offer investors a pure play on the level of expected stock market volatility
+
+regardless th direction
+
+VIX futures
+futures term structure.
+
+variance swap
+refers to the factor that these instruments have a payoff analogous to that of a swap.
+
+analogous analogous to that of a swap.
+analogous analogous to that of a swap.
+
+vega notional 
+nega notional 
+vega notional
+vega notional
+
+vega notional
+
+vega notional
+
+vega notional
+
+vega notional when the vega notional is 50, the profit of loss for one volatility point of the difference between 
+the realized vol and the stike vol will be close to 50.and
+when the veaga notional is 50, the profit / loss fron one volatility point of the difference
+will be close to 50.and
+
+
+vega 
+
+variance notional  = vega notional 
+vega notona vega notional / 2 * KeyboardInterrupt
+
+
+settle ammount = N vega * (sigma x - x2) / 2 / K                  
+ = n variance notional * ..
+
+
+vega_notional = 50000
+
+volatility_K = 20
+variance_K = volatility_K ** 2
+
+variance_notional
+
+variance_notional 
+
+variance_notional = vega_notional / (2 * volatility_K)
+
+realized_vol_2 = 18**2
+
+implied_vol_t_T = 18
+
+implied_vol_t_T_square = implied_vol_t_T **2
+
+
+PV_T = (1 / (1 + 2.5/200))
+
+varianceswap_Value = variance_notional * 1 * (1/2 * realized_vol_2 + 1/2 * implied_vol_t_T_square - variance_K)
+
+
+BPV_CTD = 98.14 / 100 * 8.623 * 0.0001 * 100000
+
+CF = .619489
+
+N_f = 3.604 * 10**6 / 35000 * 1.2/1
+
+BPV_P = 3.604*10**6 * 9.5 * .0001
+
+BPVHR = BPV_P / BPV_CTD * CF
+
+He observes that the current price for the fed fund futures contract expiring next meeting is 97.9
+
+EFFR = 4.33
+EFFR
+
+mid_target = 4.375
+
+hike_target = (4 + 4.25 )/2
+
+prob = (EFFR - mid_target)  / (hike_target - mid_target)
+
+
+US investor ...> EURo 
+US demand is strong, means US appreciation, he would need more EUR he earns to payback US.
+
+US ----> Dealer
+
+US <----- Dealer
+
+Delaer would hedge the currency appreciaition risk
+
+INT received
+
+US ------> PAY EURO int
+
+US <--------Get US INTerests from dealer
+
+and the dealer PAY US int
+
+a positive basis for lending US
+
+profit from carry roll down
+
+The swap structured that executive pays the return on 10 million share of the companysstock, and received the retun based on floating interest rate,mrr, on anotional value 300m
+
+EFFR = 100 - 97.175
+
+current_ffr = 2.625
+
+# 25bps hike_target
+hike_ffr = (2.75 + 3) / 2
+
+prob = (EFFR - current_ffr)/ (hike_ffr - current_ffr)
+
+BPV_Portfolio = 0.0001 * 7.5 * 10000000
+
+BPV_CTD = 144.2 / 100 * .0001 * 100000 * 8.3
+CF = .7455
+BPVHR = BPV_Portfolio/BPV_CTD * CF
+
+"""
